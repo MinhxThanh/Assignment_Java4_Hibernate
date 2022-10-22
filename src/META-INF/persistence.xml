@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="A-S-M"
+		transaction-type="RESOURCE_LOCAL">
+		<class>poly.model.AnConmment</class>
+		<class>poly.model.Comment</class>
+		<class>poly.model.Favorite</class>
+		<class>poly.model.History</class>
+		<class>poly.model.Notification</class>
+		<class>poly.model.Rate</class>
+		<class>poly.model.Share</class>
+		<class>poly.model.User</class>
+		<class>poly.model.Video</class>
+		<class>poly.model.VideoCountry</class>
+		<class>poly.model.VideoEp</class>
+		<class>poly.model.VideoType</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:sqlserver://localhost:1433;databaseName=flims" />
+			<property name="javax.persistence.jdbc.user" value="sa" />
+			<property name="javax.persistence.jdbc.password"
+				value="reallyStrongPwd123" />
+			<property name="javax.persistence.jdbc.driver"
+				value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.SQLServer2008Dialect" />
+		</properties>
+	</persistence-unit>
+</persistence>

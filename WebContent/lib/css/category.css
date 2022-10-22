@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+@import
+	url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap")
+	;
+/* fallback */
+@font-face {
+	font-family: "Material Icons Round";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		url(https://fonts.gstatic.com/s/materialiconsround/v73/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmPq_HTTw.woff2)
+		format("woff2");
+}
+
+.name-heading_movie {
+	background: #3A3A3A;
+	padding: 3px;
+}
+
+.heading_movie {
+	font-size: 25px;
+	color: #CCCCCC;
+	text-align: center;
+}
+
+.table-condensed {
+	font-size: 15px;
+	margin-top: 7px;
+}
+
+/* .table-condensed>tbody>tr>th {
+	padding-top: 17px;
+}
+
+.table-condensed>tbody>tr>td {
+	padding-top: 17px;
+}
+ */
+.content-movie, .comment, .body-episode {
+	background: #3A3A3A;
+	padding: 5px;
+}
+
+.content-movie>.content-movie-play-favorite i {
+	font-size: 20px;
+}
+
+.content-movie-rate {
+	position: absolute;
+	top: 5px;
+	right: 8px;
+}
+
+.title {
+	font-size: 14px;
+}
+
+.body>.body-content {
+	background: #3A3A3A;
+	padding: 5px;
+}
+
+.body-content-body>p {
+	font-size: 12px;
+}
+
+.body-content {
+	position: absolute;
+	top: -8px;
+	right: -4px;
+}
+
+.content-right-title {
+	background: #3A3A3A;
+}
+
+.content-right-title>h2 {
+	font-size: 18px;
+	text-align: center;
+}
+

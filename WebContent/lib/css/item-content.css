@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+@import
+	url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap")
+	;
+/* fallback */
+@font-face {
+	font-family: "Material Icons Round";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		url(https://fonts.gstatic.com/s/materialiconsround/v73/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmPq_HTTw.woff2)
+		format("woff2");
+}
+
+.cart-body {
+	position: relative;
+}
+
+.cart-body-image {
+	opacity: 1;
+	display: block;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.middle>i {
+	font-size: 30px;
+	color: #6B5E67;
+}
+
+.cart-body:hover .cart-body-image {
+	opacity: 0.3;
+}
+
+.cart-body:hover .middle {
+	opacity: 1;
+}
+
+.exit {
+	z-index: 3;
+}
+
+.cart-footer-name {
+	font-size: 18px;
+	color: #ED3E6E;
+	transition: 0.5s;
+	text-decoration: none;
+}
+
+.cart-footer-name:hover {
+	color: #ffe3eb;
+	text-decoration: none;
+}
+
+.cart-footer-name:active {
+	color: #EB3A52;
+}
+
+.cart-year {
+	position: relative;
+	top: 3px;
+	font-size: 12px;
+}

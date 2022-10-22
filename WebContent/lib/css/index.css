@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+@import
+	url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap")
+	;
+/* fallback */
+@font-face {
+	font-family: "Material Icons Round";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		url(https://fonts.gstatic.com/s/materialiconsround/v73/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmPq_HTTw.woff2)
+		format("woff2");
+}
+
+.container {
+	padding-top: 5px;
+	background: #2D2D2D;
+	border: 2px solid #46474A;
+}
+
+.container header {
+	background: #2D2D2D;
+}
+
+.nav>.nav-link:hover {
+	color: #ED3E6E;
+}
+
+.card-img-left-login {
+	width: 45%;
+	/* Link to your background image using in the property below! */
+	background: scroll center
+		url('https://source.unsplash.com/XyrIWp_cFtI/414x512');
+	background-size: cover;
+}
+
+.card-img-left-register {
+	width: 45%;
+	/* Link to your background image using in the property below! */
+	background: scroll center
+		url('https://source.unsplash.com/xXKGi-081cA/414x512');
+	background-size: cover;
+}
+
+.btn-login {
+	font-size: 0.9rem;
+	letter-spacing: 0.05rem;
+	padding: 0.75rem 1rem;
+}
+
+.btn-google {
+	color: white !important;
+	background-color: #ea4335;
+}
+
+.btn-facebook {
+	color: white !important;
+	background-color: #3b5998;
+}
+
+.profile-button {
+	background: rgb(99, 39, 120);
+	box-shadow: none;
+	border: none
+}
+
+.profile-button:hover {
+	background: #682773
+}
+
+.profile-button:focus {
+	background: #682773;
+	box-shadow: none
+}
+
+.profile-button:active {
+	background: #682773;
+	box-shadow: none
+}
+/****** Style Star Rating Widget *****/
+#rating {
+	border: none;
+	float: left;
+	font-size: 20px;
+}
+
+#rating>input {
+	display: none;
+} /*ẩn input radio - vì chúng ta đã có label là GUI*/
+#rating>label:before {
+	margin: 5px;
+	font-size: 1.25em;
+	font-family: FontAwesome;
+	display: inline-block;
+	content: "\f005";
+} /*1 ngôi sao*/
+#rating>.half:before {
+	content: "\f089";
+	position: absolute;
+} /*0.5 ngôi sao*/
+#rating>label {
+	color: #ddd;
+	float: right;
+}
+	/*float:right để lật ngược các ngôi sao lại đúng theo thứ tự trong thực tế*/
+/*thêm màu cho sao đã chọn và các ngôi sao phía trước*/
+#rating>input:checked ~label, #rating:not(:checked)>label:hover, #rating:not(:checked)>label:hover
+	~label {
+	color: #FFD700;
+}
+/* Hover vào các sao phía trước ngôi sao đã chọn*/
+#rating>input:checked+label:hover, #rating>input:checked ~label:hover,
+	#rating>label:hover ~input:checked ~label, #rating>input:checked ~label:hover
+	~label {
+	color: #FFED85;
+}
+/* .navbar-nav>.nav-item{
+	width: 40px;
+	height: 40px;
+	border: 1px solid #979797;
+	border-radius: 5px;
+	background: #181818;
+	margin-left: 10px;
+	padding-top: 8px;
+	padding-left: 9px;
+	transition: 0.5s;
+}
+.navbar-nav>.nav-item:hover{
+	background: #8B7377;
+}
+.navbar-nav>.nav-item>a{
+	color: #fff;
+	transition: 0.5s;
+}
+.navbar-nav>.nav-item>a>i{
+	font-size: 20px;
+}
+.navbar-nav>.nav-item>a:hover{
+	color: #ED3E6E;
+}
+.index{
+	z-index:3;
+}
+.dropdown-icon-user{
+	margin-left: -3px;
+}
+dropdowm
+.user-dropdown{
+	padding-left: 5px;
+}
+.user-dropdown>a{
+	color: #fff;
+}
+.dropdown-menu .dropdown-item{
+	width: 100%;
+	font-size: 14px;
+	text-transform: lowercase;
+ 	color: #fff;
+}
+.dropdown-menu{
+	--bs-dropdown-link-hover-bg: #979797;
+} 
+nav
+.pagination>.page-item>.page-link{
+	transition: 0.5s;
+} */
+/* .pagination>.page-item>.page-link:hover{
+	background: #ED3E6E;
+} */
+/*footer*/
